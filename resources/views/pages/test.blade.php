@@ -7,11 +7,17 @@
         <title>{{config('app.name', 'LSAPP')}}</title>
     </head>
     <body>
-        <h1>Welcome to Laravel</h1>
-        <p>Questa è l'applicazione Laravel</p>
-        <a href="/about">About</a>
-        <a href="/test">Test</a>
-        <a href="/services">Services</a>
-        <a href="/welcome">Hub</a>
+        <h1>Welcome to test</h1>
+        <p>Questa è la sezione Dove effettueremo un po' di test</p>
+
+        <h1>TEST</h1>
+        @for ($i=1; $i <= $numero_di_prova; $i++)
+            @if ($i%2 == 0)
+                <p>{{$i}} è pari</p>
+            @else 
+                <p>{{$i}} è dispari</p>
+            @endif
+        @endfor
+
     </body>
 </html>
